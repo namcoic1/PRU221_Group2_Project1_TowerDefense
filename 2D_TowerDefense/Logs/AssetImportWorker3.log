@@ -1,0 +1,553 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit ProfessionalWorkstation' Language: 'en' Physical Memory: 16255 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+E:/Unity/Advance_Unity/Project1/PRU221_Group2_Project1_TowerDefense/2D_TowerDefense
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+53097
+Successfully changed project path to: E:/Unity/Advance_Unity/Project1/PRU221_Group2_Project1_TowerDefense/2D_TowerDefense
+E:/Unity/Advance_Unity/Project1/PRU221_Group2_Project1_TowerDefense/2D_TowerDefense
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19132] Host "[IP] 192.168.0.113 [Port] 0 [Flags] 2 [Guid] 3988210561 [EditorId] 3988210561 [Version] 1048832 [Id] WindowsEditor(7,Namcoi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19132] Host "[IP] 192.168.0.113 [Port] 0 [Flags] 2 [Guid] 3988210561 [EditorId] 3988210561 [Version] 1048832 [Id] WindowsEditor(7,Namcoi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 226.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity/Advance_Unity/Project1/PRU221_Group2_Project1_TowerDefense/2D_TowerDefense/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce MX130 (ID=0x174d)
+    Vendor:   NVIDIA
+    VRAM:     2008 MB
+    Driver:   31.0.15.2849
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.028057 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 294.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.521 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2523ms)
+		BeginReloadAssembly (293ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1768ms)
+			LoadAssemblies (283ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (425ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (110ms)
+			SetupLoadedEditorAssemblies (1043ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (295ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (512ms)
+				ProcessInitializeOnLoadMethodAttributes (201ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.020496 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Unity\Advance_Unity\Project1\PRU221_Group2_Project1_TowerDefense\2D_TowerDefense\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Unity\Advance_Unity\Project1\PRU221_Group2_Project1_TowerDefense\2D_TowerDefense\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 255.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.605 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3607ms)
+		BeginReloadAssembly (242ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (3016ms)
+			LoadAssemblies (192ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1060ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (159ms)
+			SetupLoadedEditorAssemblies (1457ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (255ms)
+				BeforeProcessingInitializeOnLoad (253ms)
+				ProcessInitializeOnLoadAttributes (787ms)
+				ProcessInitializeOnLoadMethodAttributes (120ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 2.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4046 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (229.1 KB). Loaded Objects now: 4496.
+Memory consumption went from 152.1 MB to 151.9 MB.
+Total: 8.842200 ms (FindLiveObjects: 0.681200 ms CreateObjectMapping: 0.559200 ms MarkObjects: 7.323100 ms  DeleteObjects: 0.277200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8770.390591 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_15.png
+  artifactKey: Guid(f9b0d6b7cd60a0c47908b9834ecd0736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_15.png using Guid(f9b0d6b7cd60a0c47908b9834ecd0736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0744649e852d9bfdef9e717fd8d0d11f') in 0.348942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_41.png
+  artifactKey: Guid(89101c2cae740a24c8e6c0721d3be1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_41.png using Guid(89101c2cae740a24c8e6c0721d3be1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46e2905c1c1372513185c1a1c25e873') in 0.042087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Sprites/Backyard - Free/sample_ground.png
+  artifactKey: Guid(e7f70fad8232bd441bb44e5714a718c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/sample_ground.png using Guid(e7f70fad8232bd441bb44e5714a718c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590233ec1dd5b385cd15ac5e2f0abbc9') in 0.152606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/Blue Cartoon UI/Demo_Assets/background
+  artifactKey: Guid(9b98632301a5bf2459da7b02c3367c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Blue Cartoon UI/Demo_Assets/background using Guid(9b98632301a5bf2459da7b02c3367c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cf2930fb574387dc68c43de0791e29') in 0.016890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_79.png
+  artifactKey: Guid(85b0f0d4c558ccf4688550c4e511d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_79.png using Guid(85b0f0d4c558ccf4688550c4e511d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4b927284c839dc47c21fa214a96060') in 0.035628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_55.png
+  artifactKey: Guid(4d5d5ef2c8b2b8748a8214a36033e591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_55.png using Guid(4d5d5ef2c8b2b8748a8214a36033e591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380c72baec7d54755a9d52f23f750f3a') in 0.034758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_65.png
+  artifactKey: Guid(22778124df40fdf43959776d74f76e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_65.png using Guid(22778124df40fdf43959776d74f76e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e722c02b8487c3d08cd07c40e01eec') in 0.039946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_86.png
+  artifactKey: Guid(28a404fb552c6ed4e97e62f56ead10b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_86.png using Guid(28a404fb552c6ed4e97e62f56ead10b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2785ee3864a5d28aeb80dd2769d8d2fe') in 0.030606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/Backyard - Free/Additional Files
+  artifactKey: Guid(9f0d7c063a2d0704d88704e687eeb7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Additional Files using Guid(9f0d7c063a2d0704d88704e687eeb7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9683a179e8e88f95ce6536ac44ac310f') in 0.018325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_12.png
+  artifactKey: Guid(a69288266d8cba04f821a67ed852172d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_12.png using Guid(a69288266d8cba04f821a67ed852172d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ba7d2e2cea5afc0ecf30c8c37b109f') in 0.037847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_67.png
+  artifactKey: Guid(4635cd3042d57ac4894e1de33903d5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_67.png using Guid(4635cd3042d57ac4894e1de33903d5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacb40d504fdb660179c585cd637f511') in 0.037934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_04.png
+  artifactKey: Guid(9c16d873f39721d458ab4c7a6b50d546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_04.png using Guid(9c16d873f39721d458ab4c7a6b50d546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2738197ed820f0ff3aa8929283993ba1') in 0.040428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_21.png
+  artifactKey: Guid(b7be91b39db9dbb44ab93ee1b4ee2074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_21.png using Guid(b7be91b39db9dbb44ab93ee1b4ee2074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938a450c01638c7076a894d51bda83ad') in 0.040545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/Pixel Adventure Assests/Assets/Items/Checkpoints/End/End (Idle).png
+  artifactKey: Guid(66c8f602e03f5eb4f912935b5d07b091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Adventure Assests/Assets/Items/Checkpoints/End/End (Idle).png using Guid(66c8f602e03f5eb4f912935b5d07b091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b749e2848bfd3399613af5fc8d14fe') in 0.048594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_09.png
+  artifactKey: Guid(2783e0ae11dab2244a819b0896914662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_09.png using Guid(2783e0ae11dab2244a819b0896914662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab22a624719ef5eb5445f2aee293644') in 0.046184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_62.png
+  artifactKey: Guid(3da68ef5aff9c094fb27efd061ff93b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_62.png using Guid(3da68ef5aff9c094fb27efd061ff93b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5657550d9356a8137a1a10b580ce06') in 0.041615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites/misc/chest
+  artifactKey: Guid(172d7d99b95a5e44282612d3557cd5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites/misc/chest using Guid(172d7d99b95a5e44282612d3557cd5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6927073561cad940a426ebc1a834cf1') in 0.025459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_76.png
+  artifactKey: Guid(973aebab9937f93469370edbd5ebe1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_76.png using Guid(973aebab9937f93469370edbd5ebe1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c12881591db6eec5c5165ff5435e86') in 0.043870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_59.png
+  artifactKey: Guid(2fd24acb24370784589070e983a09fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_59.png using Guid(2fd24acb24370784589070e983a09fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d4498f3c2f6de57dd97a2968ca60d1') in 0.043304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Sprites/Backyard - Free/backyard.png
+  artifactKey: Guid(94be7da01d5b5734b8a6b655e076fd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/backyard.png using Guid(94be7da01d5b5734b8a6b655e076fd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0f6b6f0ddaf36460b264515e6a31b8') in 0.146191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Sprites/Pixel Adventure Assests/Assets/Items/Checkpoints
+  artifactKey: Guid(74cfb3870c0566643a86fc753203c83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Adventure Assests/Assets/Items/Checkpoints using Guid(74cfb3870c0566643a86fc753203c83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee466d84643c6c25b259682ea657bdce') in 0.024794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_31.png
+  artifactKey: Guid(70ad5ab5d4354db4d982a568a01364d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_31.png using Guid(70ad5ab5d4354db4d982a568a01364d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305b25cb71fe0d1dd3572da7ca93d74c') in 0.042707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_52.png
+  artifactKey: Guid(63b609a692b00b74597836fd4a393012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_52.png using Guid(63b609a692b00b74597836fd4a393012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8612c8821744d7e7f33b089d2da839ea') in 0.040874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_02.png
+  artifactKey: Guid(7b4fe584f7fe99d46adea23e8a035535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_02.png using Guid(7b4fe584f7fe99d46adea23e8a035535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc009f6e441ace6bd1584b25ca35e744') in 0.045958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Sprites/Antarsoft.png
+  artifactKey: Guid(1ec56ce93ed1edd498cab9acc9665d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Antarsoft.png using Guid(1ec56ce93ed1edd498cab9acc9665d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6097887bc59bccc7706b6d239d2c7e16') in 0.513866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_29.png
+  artifactKey: Guid(23139bf953f7c564c925126b1ec0abb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_29.png using Guid(23139bf953f7c564c925126b1ec0abb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18df50b8268eead1113a47e96cfe3db') in 0.036332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_25.png
+  artifactKey: Guid(807eaa8b9651bd94fa4c234b55488592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_25.png using Guid(807eaa8b9651bd94fa4c234b55488592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e4a470e025b7ee4b4bc198bf6d8948') in 0.039420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_33.png
+  artifactKey: Guid(ce6083febd03fb7429a78516da0ecf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_33.png using Guid(ce6083febd03fb7429a78516da0ecf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db9ac0583a8a6ce44c26fffbad90f02') in 0.041537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_45.png
+  artifactKey: Guid(f7ca04e78841a9846a92bcddd9e0211e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_45.png using Guid(f7ca04e78841a9846a92bcddd9e0211e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e11129b1f3688a3d07fc5de7e32a20') in 0.046379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_30.png
+  artifactKey: Guid(4d103907d6c2aba48b413f982a667de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_30.png using Guid(4d103907d6c2aba48b413f982a667de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7de4741e99ca1f220231caeb88f6e29') in 0.042786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Sprites/Blue Cartoon UI/Atlas.png
+  artifactKey: Guid(fa14a248b3e57aa4ba7d97d5a9a06b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Blue Cartoon UI/Atlas.png using Guid(fa14a248b3e57aa4ba7d97d5a9a06b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa6a527c71e1f7cce4d83bc5c6a476b') in 0.970631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_58.png
+  artifactKey: Guid(178aec78884a6e045a0876f04a664d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_58.png using Guid(178aec78884a6e045a0876f04a664d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e75beae3dcd40260c39b1b78efd2393') in 0.053185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_07.png
+  artifactKey: Guid(1bba5feb57343fe49ba5fe4fd4a701ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_07.png using Guid(1bba5feb57343fe49ba5fe4fd4a701ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dea0a2e495236559d03906a159a4b23') in 0.058550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_75.png
+  artifactKey: Guid(efd565c3c69a6844f88c90138ea5d008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_75.png using Guid(efd565c3c69a6844f88c90138ea5d008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0881cca25b7286c5212628c9b46089') in 0.049285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Sprites/Pixel Adventure Assests/Assets
+  artifactKey: Guid(f1a4ad9cdb586fb4786be5164a07e564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Adventure Assests/Assets using Guid(f1a4ad9cdb586fb4786be5164a07e564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af39b33ae312b2b0812ff97cc0164fdf') in 0.028690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_40.png
+  artifactKey: Guid(0aaefb87c0245a34d85aead6e43df778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_40.png using Guid(0aaefb87c0245a34d85aead6e43df778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922373346383c42b0161e938a86fb57c') in 0.050181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_37.png
+  artifactKey: Guid(a0abf9bf9e4565c4a9c31f5ce49606b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_37.png using Guid(a0abf9bf9e4565c4a9c31f5ce49606b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84256e1f78c98a7826f5dc3fd8c4a9e0') in 0.048536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/Sunny Land Forest Assets/Artwork/Environment/middleground.png
+  artifactKey: Guid(04e6cfd8d6b89f64ab3da7bd029f3c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sunny Land Forest Assets/Artwork/Environment/middleground.png using Guid(04e6cfd8d6b89f64ab3da7bd029f3c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0890c7700b94e4c2e97a6273c78995bb') in 0.082571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_44.png
+  artifactKey: Guid(1f4d2670a903d7e488f277dd8b119c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_44.png using Guid(1f4d2670a903d7e488f277dd8b119c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e534f764f3deeb7ddd2a4edb1f95f8c7') in 0.050418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_20.png
+  artifactKey: Guid(b516c122e2dd06341986fd670f39d0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_20.png using Guid(b516c122e2dd06341986fd670f39d0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ecc83a8e430da1a17f1f46c0b28250') in 0.050693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites
+  artifactKey: Guid(60bcee4234ceea6438b526af26123f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites using Guid(60bcee4234ceea6438b526af26123f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d717d35b474d7771b0dda53e9e5b992') in 0.026509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_19.png
+  artifactKey: Guid(448492270f7d60d40a4c790f11a27367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_19.png using Guid(448492270f7d60d40a4c790f11a27367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd268b56c486a7f1865753668a695f66a') in 0.050019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_60.png
+  artifactKey: Guid(9179aa5e3b61c11429abee93bd6fbe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_60.png using Guid(9179aa5e3b61c11429abee93bd6fbe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ffc94fc59812d1edfe769f8e75226e0') in 0.049693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_71.png
+  artifactKey: Guid(8b5840c5c45ec8948a98dca4a676865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_71.png using Guid(8b5840c5c45ec8948a98dca4a676865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11d76d9a76b837899111d00305e7bef') in 0.053649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Sprites/Sunny Land Forest Assets/Artwork/Environment/tileset_preview.png
+  artifactKey: Guid(82365437334d58c4da5b2f08614bb7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sunny Land Forest Assets/Artwork/Environment/tileset_preview.png using Guid(82365437334d58c4da5b2f08614bb7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84cd07963c4951d4d8f462fd631e6a8f') in 0.076163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_66.png
+  artifactKey: Guid(c6468176b282f7c408de15ce84320319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_66.png using Guid(c6468176b282f7c408de15ce84320319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0dfba7330eac43bd472ba43ad24cc5') in 0.047815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Sprites/Pixel Adventure Assests
+  artifactKey: Guid(a43a2ef35f555984c8997259e93332b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Adventure Assests using Guid(a43a2ef35f555984c8997259e93332b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fb662d54944153382e1f571ddc97f0') in 0.028519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_82.png
+  artifactKey: Guid(669e4f36474871c499cb87c5c99b5670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_82.png using Guid(669e4f36474871c499cb87c5c99b5670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6aa57eda8e930408d79ec9d0c6574b') in 0.056419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_64.png
+  artifactKey: Guid(ae78a84d967c6174fabeb61914c64cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_64.png using Guid(ae78a84d967c6174fabeb61914c64cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e786aef65b05a2d31befebcc11e39450') in 0.050343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_08.png
+  artifactKey: Guid(840120beac24a304d92cae6f92e89a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_08.png using Guid(840120beac24a304d92cae6f92e89a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b8beb409652877d6f9497676ca7f50') in 0.048979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites/misc/chest/chest-1.png
+  artifactKey: Guid(f3a6ab609fe18d5459b6265e759178ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites/misc/chest/chest-1.png using Guid(f3a6ab609fe18d5459b6265e759178ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc62bf0ac8c250e1a057b7ef61a7be67') in 0.056458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Sprites/Common/heart.png
+  artifactKey: Guid(8638133a50c49ae4f920bfbbf2f7a508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Common/heart.png using Guid(8638133a50c49ae4f920bfbbf2f7a508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a9cc855e6da584f4048d551e132ee7') in 0.129439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Sprites/Backyard - Free/Separate Tiles/backyard_47.png
+  artifactKey: Guid(d7b71457ba8e3da40a16174c03769d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Backyard - Free/Separate Tiles/backyard_47.png using Guid(d7b71457ba8e3da40a16174c03769d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31afcc14fb6b46c3d5d7e397c6e6d7f5') in 0.049731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites/misc
+  artifactKey: Guid(8e115f781b702f04492822a6fcbfb70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sunny Land Forest Assets/Artwork/Sprites/misc using Guid(8e115f781b702f04492822a6fcbfb70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775879ef56c27a0671f44dc34b61e4fb') in 0.025406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Sprites/Pixel Adventure Assests/Scenes
+  artifactKey: Guid(d44fcb1ef29c13a418a470695ae21735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Adventure Assests/Scenes using Guid(d44fcb1ef29c13a418a470695ae21735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e107037258537f8939bd1f640c624ac') in 0.029162 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016862 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Unity\Advance_Unity\Project1\PRU221_Group2_Project1_TowerDefense\2D_TowerDefense\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Unity\Advance_Unity\Project1\PRU221_Group2_Project1_TowerDefense\2D_TowerDefense\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.114 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3115ms)
+		BeginReloadAssembly (468ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (36ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (125ms)
+		EndReloadAssembly (2292ms)
+			LoadAssemblies (292ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (799ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (163ms)
+			SetupLoadedEditorAssemblies (947ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (59ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (222ms)
+				ProcessInitializeOnLoadAttributes (544ms)
+				ProcessInitializeOnLoadMethodAttributes (93ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.62 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4041 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (195.4 KB). Loaded Objects now: 4529.
+Memory consumption went from 156.5 MB to 156.3 MB.
+Total: 7.996800 ms (FindLiveObjects: 0.522900 ms CreateObjectMapping: 0.507300 ms MarkObjects: 6.598900 ms  DeleteObjects: 0.365000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
