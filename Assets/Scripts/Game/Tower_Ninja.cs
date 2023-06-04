@@ -16,7 +16,7 @@ public class Tower_Ninja : Tower
     //init (start the shooting interval)
     protected override void Start()
     {
-        Debug.Log("NINJA");
+        Debug.Log("NINJA.");
         //start the shooting interval IEnum
         StartCoroutine(ShootDelay());
     }
@@ -31,7 +31,7 @@ public class Tower_Ninja : Tower
     void ShootItem()
     {
         //Instantiate shoot item
-        GameObject shotItem = Instantiate(prefab_shootItem,transform);
+        GameObject shotItem = Instantiate(prefab_shootItem, transform);
         //Set its values  
         shotItem.GetComponent<ShootItem>().Init(damage);
     }

@@ -8,7 +8,7 @@ public class ShootItem : MonoBehaviour
     //damage
     public int damage;
     //speed
-    public float flySpeed,rotateSpeed;
+    public float flySpeed, rotateSpeed;
 
     //METHODS
     //Init
@@ -19,14 +19,15 @@ public class ShootItem : MonoBehaviour
     //Trigger with enemy
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag=="Enemy")
+        if (collision.tag == "Enemy")
         {
-            Debug.Log("Shot the enemy");
+            Debug.Log("Shot the enemy.");
             collision.GetComponent<Enemy>().LoseHealth();
             Destroy(gameObject);
         }
         if (collision.tag == "Out")
-        {            
+        {
+            Debug.Log("Not to shot the enemy.");
             Destroy(gameObject);
         }
     }
@@ -38,7 +39,7 @@ public class ShootItem : MonoBehaviour
     }
     void Rotate()
     {
-        graphics.Rotate(new Vector3(0,0,-rotateSpeed*Time.deltaTime));
+        graphics.Rotate(new Vector3(0, 0, -rotateSpeed * Time.deltaTime));
     }
     void FlyForward()
     {
