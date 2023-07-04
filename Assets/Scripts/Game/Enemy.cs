@@ -110,5 +110,12 @@ public class Enemy : MonoBehaviour
             detectedTower = collision.GetComponent<Tower>();
             attackOrder = StartCoroutine(Attack());
         }
+
+        if (collision.tag == "House")
+        {
+            Debug.Log("Lost health");
+            FindObjectOfType<HealthSystem>().LoseHealth();
+            Destroy(gameObject);
+        }
     }
 }
