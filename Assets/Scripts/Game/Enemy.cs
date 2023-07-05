@@ -17,9 +17,15 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (!detectedTower)
+        if (!detectedTower && FindObjectOfType<HealthSystem>().healthCount > 0)
         {
             Move();
+        }
+        else if (FindObjectOfType<HealthSystem>().healthCount == 0)
+        {
+            // animator.Play("Move");
+            // FindObjectOfType<Tower_Pink>().Stop();
+            // FindObjectOfType<Tower_Ninja>().Stop();
         }
     }
 
@@ -113,7 +119,7 @@ public class Enemy : MonoBehaviour
 
         if (collision.tag == "House")
         {
-            Debug.Log("Lost health");
+            SSTools.ShowMessage("Warning! Losing health.", SSTools.Position.bottom, SSTools.Time.halfSecond);
             FindObjectOfType<HealthSystem>().LoseHealth();
             Destroy(gameObject);
         }

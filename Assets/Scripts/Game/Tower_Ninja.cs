@@ -8,8 +8,13 @@ public class Tower_Ninja : Tower
     public int damage;
     //prefab (shooting item)
     public GameObject prefab_shootItem;
+
+    public Animator animator;
+
     //shoot interval
     public float interval;
+
+    private IEnumerator coroutine;
 
 
     //METHODS
@@ -18,6 +23,8 @@ public class Tower_Ninja : Tower
     {
         Debug.Log("NINJA.");
         //start the shooting interval IEnum
+        // coroutine = ShootDelay();
+        // StartCoroutine(coroutine);
         StartCoroutine(ShootDelay());
     }
     //Interval for shooting
@@ -25,6 +32,7 @@ public class Tower_Ninja : Tower
     {
         yield return new WaitForSeconds(interval);
         ShootItem();
+        // StartCoroutine(coroutine);
         StartCoroutine(ShootDelay());
     }
     //Shoot an item
@@ -34,5 +42,12 @@ public class Tower_Ninja : Tower
         GameObject shotItem = Instantiate(prefab_shootItem, transform);
         //Set its values  
         shotItem.GetComponent<ShootItem>().Init(damage);
+    }
+    public void Stop()
+    {
+        Debug.Log("STOP.");
+        StopCoroutine(coroutine);
+        // StopCoroutine("ShootDelay");
+        // StopAllCoroutines();
     }
 }

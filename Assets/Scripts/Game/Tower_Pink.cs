@@ -11,12 +11,17 @@ public class Tower_Pink : Tower
     //Coin image object
     public GameObject obj_coin;
 
+    public Animator animator;
+
+    private IEnumerator coroutine;
 
     //METHODS
     //Init
     protected override void Start()
     {
         Debug.Log("PINK.");
+        // coroutine = Interval();
+        // StartCoroutine(coroutine);
         StartCoroutine(Interval());
     }
     //Interval IEnumerator
@@ -27,6 +32,7 @@ public class Tower_Pink : Tower
         IncreaseIncome();
 
         StartCoroutine(Interval());
+        // StartCoroutine(coroutine);
     }
     //Trigger Income Increase
     public void IncreaseIncome()
@@ -40,5 +46,12 @@ public class Tower_Pink : Tower
         obj_coin.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         obj_coin.SetActive(false);
+    }
+    public void Stop()
+    {
+        Debug.Log("STOP.");
+        StopCoroutine(coroutine);
+        // StopCoroutine("Interval");
+        // StopAllCoroutines();
     }
 }

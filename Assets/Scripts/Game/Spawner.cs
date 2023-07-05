@@ -59,7 +59,7 @@ public class Spawner : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Not Enough Currency!");
+                    SSTools.ShowMessage("Warning! Not enough currency.", SSTools.Position.bottom, SSTools.Time.oneSecond);
                 }
             }
         }
