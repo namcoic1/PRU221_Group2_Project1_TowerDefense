@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Game;
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -109,9 +110,10 @@ public class Enemy : MonoBehaviour
             detectedTower = collision.GetComponent<Tower>();
             attackOrder = StartCoroutine(Attack());
         }
-        if (collision.tag == "Home")
+
+        if (collision.tag == "House")
         {
-            Debug.Log("Health is decreasing.");
+            Debug.Log("Lost health");
             FindObjectOfType<HealthSystem>().LoseHealth();
             Destroy(gameObject);
         }
