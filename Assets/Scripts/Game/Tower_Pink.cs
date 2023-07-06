@@ -19,11 +19,19 @@ public class Tower_Pink : Tower
     //Init
     protected override void Start()
     {
-        Debug.Log("PINK.");
+        Debug.Log("SELECT PINK.");
+        animator.Play("Appear");
         // coroutine = Interval();
         // StartCoroutine(coroutine);
         StartCoroutine(Interval());
     }
+
+    public void DangerHealth()
+    {
+        Debug.Log("DESTROY PINK.");
+        // animator.Play("Disappear");
+    }
+
     //Interval IEnumerator
     IEnumerator Interval()
     {

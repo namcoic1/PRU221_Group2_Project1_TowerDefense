@@ -6657,7 +6657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txt_healthCount: {fileID: 258132261}
-  defaultHealthCount: 5
+  defaultHealthCount: 10
   healthCount: 5
   pauseMenu: {fileID: 904435018}
 --- !u!114 &1669589385
@@ -6705,6 +6705,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 5329431245111203146, guid: 31b6829ee1c0e4244815d79cd70889ba, type: 3}
   - {fileID: 6369914192126342118, guid: cc8d78a7121bd3045ae41b020cc66aa7, type: 3}
+  - {fileID: 5413101277909644394, guid: f987181e0e9da3a48a027b5e3ebcdc8d, type: 3}
   spawnPoints:
   - {fileID: 2100566766}
   - {fileID: 1013829115}

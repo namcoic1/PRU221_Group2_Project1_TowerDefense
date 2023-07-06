@@ -10,6 +10,8 @@ public class ShootItem : MonoBehaviour
     //speed
     public float flySpeed, rotateSpeed;
 
+    Enemy detectedEnemy;
+
     //METHODS
     //Init
     public void Init(int dmg)
@@ -21,7 +23,13 @@ public class ShootItem : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            collision.GetComponent<Enemy>().LoseHealth();
+            // collision.GetComponent<Enemy>().LoseHealth(damage);
+            detectedEnemy = collision.GetComponent<Enemy>();
+            bool enemyDied = detectedEnemy.LoseHealth(damage);
+            if (enemyDied)
+            {
+                detectedEnemy = null;
+            }
             Destroy(gameObject);
         }
         if (collision.tag == "Out")

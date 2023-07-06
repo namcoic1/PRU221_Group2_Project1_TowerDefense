@@ -10,10 +10,13 @@ namespace Assets.Scripts.Game
 
         public int HealthBee { get; set; }
         public int AttackPowerBee { get; set; }
-        public float MoveSpeedBee { get; set; }        
+        public float MoveSpeedBee { get; set; }
         public int HealthSlug { get; set; }
         public int AttackPowerSlug { get; set; }
         public float MoveSpeedSlug { get; set; }
+        public int HealthPiranha { get; set; }
+        public int AttackPowerPiranha { get; set; }
+        public float MoveSpeedPiranha { get; set; }
 
         public ConfigurationData()
         {
@@ -33,13 +36,18 @@ namespace Assets.Scripts.Game
                 catch (Exception)
                 {
                     // configuration data with default values
-                    HealthBee = 2;
+                    HealthBee = 1;
                     AttackPowerBee = 1;
-                    MoveSpeedBee = 0.6f;      
-                    
-                    HealthSlug = 3;
+                    MoveSpeedBee = 1f;
+
+                    HealthSlug = 2;
                     AttackPowerSlug = 2;
-                    MoveSpeedSlug = 0.3f;
+                    MoveSpeedSlug = 0.5f;
+
+                    // default attribute new enemy
+                    HealthPiranha = 4;
+                    AttackPowerPiranha = 3;
+                    MoveSpeedPiranha = 0.3f;
                 }
                 finally
                 {
@@ -58,14 +66,20 @@ namespace Assets.Scripts.Game
             string[] values = csvValues.Split('|');
             string[] valueBee = values[0].Split(",");
             string[] valueSlug = values[1].Split(",");
+            string[] valuePiranha = values[2].Split(",");
 
             HealthBee = int.Parse(valueBee[0]);
             AttackPowerBee = int.Parse(valueBee[1]);
-            MoveSpeedBee = float.Parse(valueBee[2]);
+            MoveSpeedBee = (float.Parse(valueBee[2]) - 0.6f);
 
             HealthSlug = int.Parse(valueSlug[0]);
             AttackPowerSlug = int.Parse(valueSlug[1]);
-            MoveSpeedSlug = float.Parse(valueSlug[2]);
+            MoveSpeedSlug = (float.Parse(valueSlug[2]) - 0.6f);
+
+            HealthPiranha = int.Parse(valuePiranha[0]); ;
+            AttackPowerPiranha = int.Parse(valuePiranha[1]);
+            MoveSpeedPiranha = (float.Parse(valuePiranha[2]) - 0.8f);
+            Debug.Log(HealthBee + "" + HealthSlug + "" + HealthPiranha);
         }
     }
 }

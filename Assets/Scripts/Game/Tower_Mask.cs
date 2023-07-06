@@ -7,5 +7,11 @@ public class Tower_Mask : Tower
     protected override void Start()
     {
         Debug.Log("MASK.");
+        animator.Play("Appear");
+    }
+    public void DangerHealth()
+    {
+        Debug.Log("DESTROY MASK.");
+        // animator.Play("Disappear");
     }
 }

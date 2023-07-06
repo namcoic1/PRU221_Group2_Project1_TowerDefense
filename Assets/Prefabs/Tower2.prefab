@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1411804659960363519}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9, y: 1.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18af840ef022b6b43809551d44623299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 8
+  health: 9
   cost: 4
   animator: {fileID: -5247392609598409179}
 --- !u!61 &4923467955302381114
@@ -126,7 +126,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.6}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!95 &-5247392609598409179
 Animator:

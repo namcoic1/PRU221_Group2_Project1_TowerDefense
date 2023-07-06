@@ -22,10 +22,16 @@ public class Tower_Ninja : Tower
     protected override void Start()
     {
         Debug.Log("NINJA.");
+        animator.Play("Appear");
         //start the shooting interval IEnum
         // coroutine = ShootDelay();
         // StartCoroutine(coroutine);
         StartCoroutine(ShootDelay());
+    }
+    public void DangerHealth()
+    {
+        Debug.Log("DESTROY NINJA.");
+        // animator.Play("Disappear");
     }
     //Interval for shooting
     IEnumerator ShootDelay()
