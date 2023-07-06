@@ -17,9 +17,15 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (!detectedTower)
+        if (!detectedTower && FindObjectOfType<HealthSystem>().healthCount > 0)
         {
             Move();
+        }
+        else if (FindObjectOfType<HealthSystem>().healthCount == 0)
+        {
+            // animator.Play("Move");
+            // FindObjectOfType<Tower_Pink>().Stop();
+            // FindObjectOfType<Tower_Ninja>().Stop();
         }
     }
 
@@ -41,9 +47,13 @@ public class Enemy : MonoBehaviour
         {
             moveSpeed = ConfigurationUtils.MoveSpeedBee;
         }
-        else
+        else if (enemyName.Equals("slug"))
         {
             moveSpeed = ConfigurationUtils.MoveSpeedSlug;
+        }
+        else
+        {
+            moveSpeed = ConfigurationUtils.MoveSpeedPiranha;
         }
 
         transform.Translate(-transform.right * moveSpeed * Time.deltaTime);
@@ -55,9 +65,13 @@ public class Enemy : MonoBehaviour
         {
             attackPower = ConfigurationUtils.AttackPowerBee;
         }
-        else
+        else if (enemyName.Equals("slug"))
         {
             attackPower = ConfigurationUtils.AttackPowerSlug;
+        }
+        else
+        {
+            attackPower = ConfigurationUtils.AttackPowerPiranha;
         }
 
         bool towerDied = detectedTower.LoseHealth(attackPower);
@@ -70,24 +84,35 @@ public class Enemy : MonoBehaviour
     }
 
     //Lose health
-    public void LoseHealth()
+    public bool LoseHealth(int amount)
     {
         if (enemyName.Equals("bee"))
         {
             health = ConfigurationUtils.HealthBee;
         }
-        else
+        else if (enemyName.Equals("slug"))
         {
             health = ConfigurationUtils.HealthSlug;
         }
+        else
+        {
+            health = ConfigurationUtils.HealthPiranha;
+        }
 
         //Decrease health value
-        health--;
+        // health--;
+        // health -= 2;
+        health -= amount;
+        Debug.Log(health + " - " + amount);
         //Blink Red animation
         StartCoroutine(BlinkRed());
         //Check if health is zero => destroy enemy
         if (health <= 0)
+        {
             Destroy(gameObject);
+            return true;
+        }
+        return false;
     }
 
     IEnumerator BlinkRed()
@@ -113,7 +138,7 @@ public class Enemy : MonoBehaviour
 
         if (collision.tag == "House")
         {
-            Debug.Log("Lost health");
+            SSTools.ShowMessage("Warning! Losing health.", SSTools.Position.bottom, SSTools.Time.halfSecond);
             FindObjectOfType<HealthSystem>().LoseHealth();
             Destroy(gameObject);
         }
