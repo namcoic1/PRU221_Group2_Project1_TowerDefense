@@ -36,18 +36,18 @@ namespace Assets.Scripts.Game
                 catch (Exception)
                 {
                     // configuration data with default values
-                    HealthBee = 1;
+                    HealthBee = 2;
                     AttackPowerBee = 1;
-                    MoveSpeedBee = 1f;
+                    MoveSpeedBee = 0.6f;
 
-                    HealthSlug = 2;
+                    HealthSlug = 3;
                     AttackPowerSlug = 2;
-                    MoveSpeedSlug = 0.5f;
+                    MoveSpeedSlug = 0.3f;
 
                     // default attribute new enemy
                     HealthPiranha = 4;
                     AttackPowerPiranha = 3;
-                    MoveSpeedPiranha = 0.3f;
+                    MoveSpeedPiranha = 0.2f;
                 }
                 finally
                 {
