@@ -13,15 +13,15 @@ public class Spawner : MonoBehaviour
     //list of towers (UI)
     public List<Image> towersUI;
     //id of tower to spawn
-    int spawnID=-1;
+    int spawnID = -1;
     //SpawnPoints Tilemap
     public Tilemap spawnTilemap;
     //Tile position
     private Vector3Int tilePos;
-    
+
     void Update()
     {
-        if(CanSpawn())
+        if (CanSpawn())
             DetectSpawnPoint();
     }
 
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
     void DetectSpawnPoint()
     {
         //Detect when mouse is clicked (first touch clicked)
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             //get the world space postion of the mouse
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -45,11 +45,11 @@ public class Spawner : MonoBehaviour
             //get the center position of the cell
             var cellPosCentered = spawnTilemap.GetCellCenterWorld(cellPosDefault);
             //check if we can spawn in that cell (collider)
-            if(spawnTilemap.GetColliderType(cellPosDefault)== Tile.ColliderType.Sprite)
+            if (spawnTilemap.GetColliderType(cellPosDefault) == Tile.ColliderType.Sprite)
             {
                 int towerCost = TowerCost(spawnID);
                 //Check if currency is enough to spawn
-                if(GameManager.instance.currency.EnoughCurrency(towerCost))
+                if (GameManager.instance.currency.EnoughCurrency(towerCost))
                 {
                     //Use the amount of cost from the currency available
                     GameManager.instance.currency.Use(towerCost);
@@ -60,26 +60,26 @@ public class Spawner : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Not Enough Currency");
-                }                               
-            }                                  
+                    SSTools.ShowMessage("Not enough money.", SSTools.Position.bottom, SSTools.Time.oneSecond);
+                }
+            }
         }
     }
 
     public int TowerCost(int id)
     {
-        switch(id)
+        switch (id)
         {
             case 0: return towersPrefabs[id].GetComponent<Tower_Pink>().cost;
             case 1: return towersPrefabs[id].GetComponent<Tower_Mask>().cost;
-            case 2: return towersPrefabs[id].GetComponent<Tower_Ninja>().cost;  
-            default:return -1;
+            case 2: return towersPrefabs[id].GetComponent<Tower_Ninja>().cost;
+            default: return -1;
         }
     }
 
     void SpawnTower(Vector3 position, Vector3Int cellPosition)
     {
-        GameObject tower = Instantiate(towersPrefabs[spawnID],spawnTowerRoot);
+        GameObject tower = Instantiate(towersPrefabs[spawnID], spawnTowerRoot);
         tower.transform.position = position;
         tower.GetComponent<Tower>().Init(cellPosition);
 
@@ -97,18 +97,18 @@ public class Spawner : MonoBehaviour
         //Set the spawnID
         spawnID = id;
         //Highlight the tower
-        towersUI[spawnID].color = Color.white;        
+        towersUI[spawnID].color = Color.white;
     }
 
     public void DeselectTowers()
     {
         spawnID = -1;
-        foreach(var t in towersUI)
+        foreach (var t in towersUI)
         {
             t.color = new Color(0.5f, 0.5f, 0.5f);
         }
-    }    
+    }
 
 
-    
+
 }

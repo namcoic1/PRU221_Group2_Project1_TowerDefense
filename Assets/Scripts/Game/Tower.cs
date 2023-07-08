@@ -23,7 +23,7 @@ public class Tower : MonoBehaviour
     public virtual bool LoseHealth(int amount)
     {
         //health = health - amount
-        health-= amount;
+        health -= amount;
 
         if (health <= 0)
         {
@@ -35,7 +35,6 @@ public class Tower : MonoBehaviour
     //Die
     protected virtual void Die()
     {
-        Debug.Log("Tower is dead");
         FindObjectOfType<Spawner>().RevertCellState(cellPosition);
         Destroy(gameObject);
     }

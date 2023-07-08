@@ -22,7 +22,6 @@ public class ShootItem : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            Debug.Log("Shot the enemy");
             // collision.GetComponent<Enemy>().LoseHealth();
             detectEnemy = collision.GetComponent<Enemy>();
             bool enemyDied = detectEnemy.LoseHealth(damage);
@@ -31,6 +30,7 @@ public class ShootItem : MonoBehaviour
             {
                 detectEnemy = null;
             }
+
             Destroy(gameObject);
         }
         if (collision.tag == "Out")

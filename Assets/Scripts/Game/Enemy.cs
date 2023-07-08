@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (!detectedTower)
+        if (!detectedTower && FindObjectOfType<HealthSystem>().healthCount > 0)
         {
             Move();
         }

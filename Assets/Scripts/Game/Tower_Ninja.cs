@@ -8,9 +8,9 @@ public class Tower_Ninja : Tower
     public int damage;
     //prefab (shooting item)
     public GameObject prefab_shootItem;
+    public Animator animator;
     //shoot interval
     public float interval;
-
 
     //METHODS
     //init (start the shooting interval)
@@ -31,7 +31,7 @@ public class Tower_Ninja : Tower
     void ShootItem()
     {
         //Instantiate shoot item
-        GameObject shotItem = Instantiate(prefab_shootItem,transform);
+        GameObject shotItem = Instantiate(prefab_shootItem, transform);
         //Set its values  
         shotItem.GetComponent<ShootItem>().Init(damage);
     }
