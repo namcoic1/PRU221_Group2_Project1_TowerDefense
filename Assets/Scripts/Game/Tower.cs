@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
@@ -9,7 +11,7 @@ public class Tower : MonoBehaviour
 
     protected virtual void Start()
     {
-        Debug.Log("BASE TOWER.");
+        Debug.Log("BASE TOWER");
     }
 
     public virtual void Init(Vector3Int cellPos)
@@ -21,7 +23,7 @@ public class Tower : MonoBehaviour
     public virtual bool LoseHealth(int amount)
     {
         //health = health - amount
-        health -= amount;
+        health-= amount;
 
         if (health <= 0)
         {
@@ -33,7 +35,7 @@ public class Tower : MonoBehaviour
     //Die
     protected virtual void Die()
     {
-        Debug.Log("Tower is dead.");
+        Debug.Log("Tower is dead");
         FindObjectOfType<Spawner>().RevertCellState(cellPosition);
         Destroy(gameObject);
     }

@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public void ChangeScreen(string screenName)
-    {
-        SceneManager.LoadScene(screenName);
-    }
-
+   public void ChangeScene(string sceneName)
+   {
+       SceneManager.LoadScene(sceneName);
+   }
     public void ExitGame()
     {
         Application.Quit();

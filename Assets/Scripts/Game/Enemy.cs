@@ -1,15 +1,13 @@
-﻿using Assets.Scripts.Game;
-using System.Collections;
+﻿using System.Collections;
 using UnityEditor;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     //Health,AttackPower,MoveSpeed
-    private int health, attackPower;
-    private float moveSpeed;
+    public int health, attackPower;
+    public float moveSpeed;
 
-    public string enemyName;
     public Animator animator;
     public float attackInterval;
     Coroutine attackOrder;
@@ -36,30 +34,11 @@ public class Enemy : MonoBehaviour
     void Move()
     {
         animator.Play("Move");
-
-        if (enemyName.Equals("bee"))
-        {
-            moveSpeed = ConfigurationUtils.MoveSpeedBee;
-        }
-        else
-        {
-            moveSpeed = ConfigurationUtils.MoveSpeedSlug;
-        }
-
         transform.Translate(-transform.right * moveSpeed * Time.deltaTime);
     }
 
     public void InflictDamage()
     {
-        if (enemyName.Equals("bee"))
-        {
-            attackPower = ConfigurationUtils.AttackPowerBee;
-        }
-        else
-        {
-            attackPower = ConfigurationUtils.AttackPowerSlug;
-        }
-
         bool towerDied = detectedTower.LoseHealth(attackPower);
 
         if (towerDied)
@@ -70,24 +49,21 @@ public class Enemy : MonoBehaviour
     }
 
     //Lose health
-    public void LoseHealth()
+    // public void LoseHealth()
+    public bool LoseHealth(int amount)
     {
-        if (enemyName.Equals("bee"))
-        {
-            health = ConfigurationUtils.HealthBee;
-        }
-        else
-        {
-            health = ConfigurationUtils.HealthSlug;
-        }
-
         //Decrease health value
-        health--;
+        // health--;
+        health -= amount;
         //Blink Red animation
         StartCoroutine(BlinkRed());
         //Check if health is zero => destroy enemy
         if (health <= 0)
+        {
             Destroy(gameObject);
+            return true;
+        }
+        return false;
     }
 
     IEnumerator BlinkRed()
@@ -113,7 +89,6 @@ public class Enemy : MonoBehaviour
 
         if (collision.tag == "House")
         {
-            Debug.Log("Lost health");
             FindObjectOfType<HealthSystem>().LoseHealth();
             Destroy(gameObject);
         }

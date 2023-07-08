@@ -10,6 +10,7 @@ public class ShootItem : MonoBehaviour
     //speed
     public float flySpeed, rotateSpeed;
 
+    Enemy detectEnemy;
     //METHODS
     //Init
     public void Init(int dmg)
@@ -21,13 +22,19 @@ public class ShootItem : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            Debug.Log("Shot the enemy.");
-            collision.GetComponent<Enemy>().LoseHealth();
+            Debug.Log("Shot the enemy");
+            // collision.GetComponent<Enemy>().LoseHealth();
+            detectEnemy = collision.GetComponent<Enemy>();
+            bool enemyDied = detectEnemy.LoseHealth(damage);
+
+            if (enemyDied)
+            {
+                detectEnemy = null;
+            }
             Destroy(gameObject);
         }
         if (collision.tag == "Out")
         {
-            Debug.Log("Not to shot the enemy.");
             Destroy(gameObject);
         }
     }
